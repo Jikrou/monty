@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
   stack_t *stack = NULL;
   FILE *mofile;
   unsigned int line_number = 0;
-  char line[100]; // Assuming each line has at most 100 characters
+  char line[100];
   char *opcode;
   char *argm;
   int value;
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
     return (EXIT_FAILURE);
   }
   while (fgets(line, sizeof(line), mofile) != NULL) {
-    line_number++; // Increment line number
+    line_number++;
 
     opcode = strtok(line, " \t\n");
     argm = strtok(NULL, " \t\n");

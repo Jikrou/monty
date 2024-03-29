@@ -16,6 +16,7 @@ instruction_t instructions[] = {
 void check_instructions(stack_t *stack, char *opcode, char *arg,
                         unsigned int line_number) {
   size_t i;
+  (void)arg;
   if (stack != NULL || opcode != NULL) {
     for (i = 0; i < sizeof(instructions) / sizeof(instructions[0]); i++) {
       if (strcmp(opcode, instructions[i].opcode) == 0) {
@@ -57,10 +58,10 @@ void push(stack_t **stack, int data) {
  */
 void pall(stack_t **stack, unsigned int line_number) {
   stack_t *cur;
+  (void)line_number;
 
   if (*stack == NULL) {
-    printf("Stack is empty\n");
-    return;
+    exit(0);
   }
 
   cur = *stack;
