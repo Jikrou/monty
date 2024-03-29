@@ -34,7 +34,7 @@ void check_instructions(stack_t *stack, char *opcode, char *arg,
  * @line_number: the line number of the opcode
  */
 void push(stack_t **stack, int data) {
-  stack_t *newNode = malloc(sizeof(stack_tt));
+  stack_t *newNode = malloc(sizeof(stack_t));
   if (newNode == NULL) {
     fprintf(stderr, "Memory allocation failed\n");
     exit(EXIT_FAILURE);
