@@ -35,7 +35,6 @@ typedef struct instruction_s {
 
 void check_instructions(stack_t *stack, char *opcode, char *arg,
                         unsigned int linenum);
-size_t print_dlistint(const stack_t *h);
 void push(stack_t **stack, int data);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
