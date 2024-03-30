@@ -87,3 +87,8 @@ if (*stack != NULL)
 }
 free(cur);
 }
+void print_err(const char *err_msg, unsigned int line_number)
+{
+	fprintf(stderr, "L%u: %s\n", line_number, err_msg);
+	exit(EXIT_FAILURE);
+}
