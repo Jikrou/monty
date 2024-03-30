@@ -66,18 +66,27 @@ unsigned int line_number)
 {
 	size_t i;
 	int value = 0;
+	char *pt = arg;
 
 	if (stack == NULL || opcode == NULL)
 	{
-		fprintf(stderr, "L%u: Missing stack or opcode\n", line_number);
-		exit(EXIT_FAILURE);
+		print_err("Missing stack or code",  line_number);
 	}
 	if (strcmp(opcode, "push") == 0)
 	{
-		if (arg == NULL || !isdigit(arg[0]))
+		if (arg == NULL)
 		{
-			fprintf(stderr, "L%u: usage: push integer\n", line_number);
-			exit(EXIT_FAILURE);
+			print_err("usage: push integer",  line_number);
+		}
+		if (*pt == '-')
+			pt++;
+		while (*pt != '\0')
+		{
+			if (!isdigit(*pt))
+			{
+				print_err("usage: push integer",  line_number);
+			}
+			pt++;
 		}
 		value = atoi(arg);
 		push(stack, value);
@@ -91,6 +100,6 @@ unsigned int line_number)
 			return (true);
 		}
 	}
-	fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);
-	exit(EXIT_FAILURE);
+		fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);
+		exit(EXIT_FAILURE);
 }

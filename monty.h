@@ -46,4 +46,5 @@ void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *stack);
 void sub(stack_t **stack, unsigned int line_number);
+void print_err(const char *err_msg, unsigned int line_number);
 #endif /* MONTY_H */
