@@ -83,9 +83,9 @@ if (top == NULL || top->next == NULL)
 fprintf(stderr, "L%u: can't sub, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
-subtra = top->n - top->next->n;
+subtra = top->next->n - top->n;
 pop(stack, line_number);
 
 top = *stack;
-top->n = abs(subtra);
+top->n = subtra;
 }
