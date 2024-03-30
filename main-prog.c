@@ -91,6 +91,6 @@ unsigned int line_number)
 			return (true);
 		}
 	}
-	fprintf(stderr, "L%u: Unknown instruction %s\n", line_number, opcode);
+	fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);
 	exit(EXIT_FAILURE);
 }
