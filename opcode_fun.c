@@ -87,6 +87,11 @@ if (*stack != NULL)
 }
 free(cur);
 }
+/**
+ * print_err - print an error msg to the stderr
+ * @err_msg: the msg to be printed
+ * @line_number: the line where the error occurd
+*/
 void print_err(const char *err_msg, unsigned int line_number)
 {
 	fprintf(stderr, "L%u: %s\n", line_number, err_msg);
