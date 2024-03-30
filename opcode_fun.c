@@ -58,7 +58,7 @@ stack_t *cur;
 
 if (*stack == NULL)
 {
-fprintf(stderr, "L%u : can't pint, stack empty\n", line_number);
+fprintf(stderr, "L%u: can't pint, stack empty\n", line_number);
 exit(EXIT_FAILURE);
 }
 cur = *stack;
