@@ -11,8 +11,7 @@ int temp;
 
 if (top == NULL || top->next == NULL)
 {
-fprintf(stderr, "L%u: can't swap, stack too short\n", line_number);
-exit(EXIT_FAILURE);
+print_err("can't swap, stack too short", line_number);
 }
 
 temp = top->n;
@@ -32,8 +31,7 @@ stack_t *top = *stack;
 int sum;
 if (top == NULL || top->next == NULL)
 {
-fprintf(stderr, "L%u: can't add, stack too short\n", line_number);
-exit(EXIT_FAILURE);
+print_err("can't add, stack too short", line_number);
 }
 sum = top->n + top->next->n;
 
@@ -82,6 +80,7 @@ if (top == NULL || top->next == NULL)
 {
 fprintf(stderr, "L%u: can't sub, stack too short\n", line_number);
 exit(EXIT_FAILURE);
+print_err("can't sub, stack too short", line_number);
 }
 subtra = top->next->n - top->n;
 pop(stack, line_number);

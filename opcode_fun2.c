@@ -37,8 +37,7 @@ void mult(stack_t **stack, unsigned int line_number)
 
 	if (top == NULL || top->next == NULL)
 	{
-		fprintf(stderr, "L%u: can't mul, stack too short\n", line_number);
-		exit(EXIT_FAILURE);
+		print_err("can't mul, stack too short", line_number);
 	}
 	sum = top->next->n * top->n;
 	pop(stack, line_number);
@@ -59,13 +58,11 @@ void mod(stack_t **stack, unsigned int line_number)
 
 	if (top == NULL || top->next == NULL)
 	{
-		fprintf(stderr, "L%u: can't mod, stack too short\n", line_number);
-		exit(EXIT_FAILURE);
+		print_err("can't mod, stack too short", line_number);
 	}
 	if (top->n == 0)
 	{
-		fprintf(stderr, "L%u: division by zero\n", line_number);
-		exit(EXIT_FAILURE);
+		print_err("division by zero", line_number);
 	}
 	rem = top->next->n % top->n;
 	pop(stack, line_number);
