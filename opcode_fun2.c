@@ -1,5 +1,6 @@
 #include "monty.h"
-/** divi - Divides the second top element of the stack by the top element.
+/**
+ * divi - Divides the second top element of the stack by the top element.
  * @stack: Double pointer to the beginning of the stack
  * @line_number: Line number being evaluated from the Monty file
 */
