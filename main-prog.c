@@ -1,7 +1,7 @@
 #include "monty.h"
 static instruction_t instructions[] = {
 	{"pall", pall}, {"pint", pint}, {"pop", pop}, {"swap", swap},
-	{"add", add}, {"nop", nop}, {"sub", sub},{"div", divi},
+	{"add", add}, {"nop", nop}, {"sub", sub}, {"div", divi},
 	{"mul", mult}, {"mod", mod},
 	};
 
