@@ -19,7 +19,7 @@ void divi(stack_t **stack, unsigned int line_number)
 		print_err("division by zero", line_number);
 	}
 
-	num = top->next->n / top->n;
+	num = top->n / top->next->n;
 	pop(stack, line_number);
 
 	top = *stack;
