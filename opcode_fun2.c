@@ -36,7 +36,7 @@ void mult(stack_t **stack, unsigned int line_number)
 	stack_t *top = *stack;
 	int sum;
 
-	if (*stack == NULL || (*stack)->next == NULL)
+	if (top == NULL || top->next == NULL)
 	{
 		fprintf(stderr, "L%u: can't mul, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
