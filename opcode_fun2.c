@@ -47,3 +47,30 @@ void mult(stack_t **stack, unsigned int line_number)
 	top = *stack;
 	top->n = sum;
 }
+/**
+ *mod - computes the rest of the division of the second top element of
+ * the stack by the top element of the stack.
+ *@stack: doible pointer to the beginnig of the stack
+ *@line_number: line number being evaluated from the monty file
+*/
+void mod(stack_t **stack, unsigned int line_number)
+{
+	stack_t *top = *stack;
+	int rem;
+
+	if (top == NULL || top->next == NULL)
+	{
+		fprintf(stderr, "L%u: can't mod, stack too short\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	if (top->n == 0)
+	{
+		fprintf(stderr, "L%u: division by zero\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	rem = top->next->n % top->n;
+	pop(stack, line_number);
+
+	top = *stack;
+	top->n = rem;
+}
