@@ -11,8 +11,7 @@ void divi(stack_t **stack, unsigned int line_number)
 
 	if (top == NULL || top->next == NULL)
 	{
-		fprintf(stderr, "L%u: can't div, stack too short\n", line_number);
-		exit(EXIT_FAILURE);
+		print_err("can't div, stack too short", line_number);
 	}
 	if (top->n == 0)
 	{
