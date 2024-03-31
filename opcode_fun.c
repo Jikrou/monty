@@ -36,7 +36,7 @@ stack_t *cur;
 
 if (*stack == NULL)
 {
-exit(0);
+return;
 }
 
 cur = *stack;
