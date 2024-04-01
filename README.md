@@ -66,7 +66,7 @@ pop
 5. swap
 The swap instruction swaps the top two elements of the stack.
 
-Usage: swap
+Usage: swap																			
 
 Example:																														
 swap
