@@ -34,8 +34,8 @@ The push instruction pushes an integer onto the stack.
 Usage: push <int>
 
 Example:																									
-push 1
-push 2
+push 1											
+push 2															
 
 2. pall
 The pall instruction prints all the values on the stack.
