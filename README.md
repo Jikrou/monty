@@ -23,6 +23,7 @@ Once compiled, you can use the Monty interpreter to execute Monty ByteCodes file
 Here's how to run the program:
 
 ./monty file.m
+
 Replace file.m with the path to your Monty ByteCodes file.
 
 Supported Instructions
