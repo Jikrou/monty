@@ -16,8 +16,8 @@ Compile the program using GCC:
 Copy code
 
 gcc -Wall -Werror -Wextra -pedantic *.c -o monty
-Usage
 
+Usage
 Once compiled, you can use the Monty interpreter to execute Monty ByteCodes files. Here's how to run the program:
 
 ./monty file.m
