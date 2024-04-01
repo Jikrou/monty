@@ -133,6 +133,7 @@ push 10
 push 20
 
 #The next line pops the element from the stack
+
 pop
 
 Contributors:
