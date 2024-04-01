@@ -108,8 +108,8 @@ mod
 
 Comment Handling
 
-Monty supports comments in Monty bytecode files.\n
-Comments are lines starting with the '#' character.\n
+Monty supports comments in Monty bytecode files.
+Comments are lines starting with the '#' character.
 
 The Monty program ignores comments during execution.\n
 
