@@ -108,19 +108,28 @@ mod
 
 Comment Handling
 
-Monty supports comments in Monty bytecode files.
-Comments are lines starting with the '#' character.
-The Monty program ignores comments during execution.
-To ignore a line entirely, ensure the '#' character is the first non-whitespace character on the line.
-Lines with leading whitespace before the '#' character will not be interpreted as comments and will be processed as regular lines of code.
-Comments can be used for adding explanatory notes, documentation, or disabling specific instructions temporarily.
+Monty supports comments in Monty bytecode files.\n
+Comments are lines starting with the '#' character.\n
 
-Example of comments in a Monty bytecode file:
-#This is a comment explaining the purpose of the following code
-push 10
-push 20
-#The next line pops the element from the stack
-pop
+The Monty program ignores comments during execution.\n
 
-Contributors
+To ignore a line entirely, ensure the '#' character is the first non-whitespace character on the line.\n
+
+Lines with leading whitespace before the '#' character will not be interpreted as comments and will be processed as regular lines of code.\n
+
+Comments can be used for adding explanatory notes, documentation, or disabling specific instructions temporarily.\n
+
+
+Example of comments in a Monty bytecode file:\n
+
+#This is a comment explaining the purpose of the following code\n
+
+push 10\n
+
+push 20\n
+
+#The next line pops the element from the stack\n
+pop\n
+
+Contributors:\n
 Jikrou
