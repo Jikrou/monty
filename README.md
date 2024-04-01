@@ -116,8 +116,6 @@ Lines with leading whitespace before the '#' character will not be interpreted a
 Comments can be used for adding explanatory notes, documentation, or disabling specific instructions temporarily.
 
 Example of comments in a Monty bytecode file:
-plaintext
-Copy code
 #This is a comment explaining the purpose of the following code
 push 10
 push 20
