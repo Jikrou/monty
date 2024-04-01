@@ -33,10 +33,8 @@ The push instruction pushes an integer onto the stack.
 
 Usage: push <int>
 
-Example:
-
+Example:																									
 push 1
-
 push 2
 
 2. pall
@@ -68,7 +66,7 @@ The swap instruction swaps the top two elements of the stack.
 
 Usage: swap
 
-Example:
+Example:																														
 swap
 
 6. add
@@ -76,7 +74,7 @@ The add instruction adds the top two elements of the stack.
 
 Usage: add
 
-Example:
+Example:																													
 add
 
 7. nop
@@ -84,7 +82,7 @@ The nop instruction does nothing.
 
 Usage: nop
 
-Example:
+Example:																									
 nop
 
 8. sub
@@ -92,7 +90,7 @@ The sub instruction subtracts the top element of the stack from the second top e
 
 Usage: sub
 
-Example:
+Example:																									
 sub
 
 9. div
@@ -100,7 +98,7 @@ The div instruction divides the second top element of the stack by the top eleme
 
 Usage: div
 
-Example:
+Example:																										
 div
 
 10. mod
@@ -108,36 +106,32 @@ The mod instruction computes the remainder of the division of the second top ele
 
 Usage: mod
 
-Example:
+Example:																											
 mod
 
 Comment Handling
 
-Monty supports comments in Monty bytecode files.
+Monty supports comments in Monty bytecode files.																						
 
-Comments are lines starting with the '#' character.
+Comments are lines starting with the '#' character.																					
+	
+The Monty program ignores comments during execution.																					
 
-The Monty program ignores comments during execution.
+To ignore a line entirely, ensure the '#' character is the first non-whitespace character on the line.														
 
-To ignore a line entirely, ensure the '#' character is the first non-whitespace character on the line.
+Lines with leading whitespace before the '#' character will not be interpreted as comments and will be processed as regular lines of code.												
 
-Lines with leading whitespace before the '#' character will not be interpreted as comments and will be processed as regular lines of code.
-
-Comments can be used for adding explanatory notes, documentation, or disabling specific instructions temporarily.
+Comments can be used for adding explanatory notes, documentation, or disabling specific instructions temporarily.													
 
 
-Example of comments in a Monty bytecode file:
+Example of comments in a Monty bytecode file:																						
 
-#This is a comment explaining the purpose of the following code
-
-push 10
-
-push 20
-
-#The next line pops the element from the stack
-
-pop
-
+#This is a comment explaining the purpose of the following code																			
+push 10																							
+push 20																						
+#The next line pops the element from the stack																	
+pop																								
+	
 
 Contributors:                                                                                                                                                       
 Jikrou
