@@ -41,9 +41,7 @@ int main(int argc, char *argv[])
 		opcode = strtok(line, " \t\n");
 		ar = strtok(NULL, " \t\n");
 		if (opcode != NULL && strlen(opcode) > 0)
-		{
 			status = check_instructions(&stack, opcode, ar, line_number);
-		}
 		else
 			continue;
 	}
