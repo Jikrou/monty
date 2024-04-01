@@ -127,9 +127,13 @@ Comments can be used for adding explanatory notes, documentation, or disabling s
 Example of comments in a Monty bytecode file:																						
 
 #This is a comment explaining the purpose of the following code																			
+
 push 10																							
+
 push 20																						
+
 #The next line pops the element from the stack																	
+
 pop																								
 	
 
