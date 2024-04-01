@@ -45,6 +45,7 @@ The pall instruction prints all the values on the stack.
 Usage: pall
 
 Example:                                                    
+
 pall
 
 3. pint
@@ -53,6 +54,7 @@ The pint instruction prints the value at the top of the stack.
 Usage: pint
 
 Example:                                                                                       
+
 pint
 
 4. pop
@@ -61,6 +63,7 @@ The pop instruction removes the top element of the stack.
 Usage: pop
 
 Example:                                                                           
+
 pop
 
 5. swap
