@@ -118,10 +118,10 @@ Comments can be used for adding explanatory notes, documentation, or disabling s
 Example of comments in a Monty bytecode file:
 plaintext
 Copy code
-# This is a comment explaining the purpose of the following code
+#This is a comment explaining the purpose of the following code
 push 10
 push 20
-# The next line pops the top element from the stack
+#The next line pops the element from the stack
 pop
 
 Contributors
