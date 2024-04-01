@@ -21,7 +21,6 @@ typedef struct stack_s {
   struct stack_s *prev;
   struct stack_s *next;
 } stack_t;
-
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
