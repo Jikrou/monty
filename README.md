@@ -34,7 +34,9 @@ The push instruction pushes an integer onto the stack.
 Usage: push <int>
 
 Example:
+
 push 1
+
 push 2
 
 2. pall
@@ -42,7 +44,7 @@ The pall instruction prints all the values on the stack.
 
 Usage: pall
 
-Example:
+Example:                                                    
 pall
 
 3. pint
@@ -50,7 +52,7 @@ The pint instruction prints the value at the top of the stack.
 
 Usage: pint
 
-Example:
+Example:                                                                                       
 pint
 
 4. pop
@@ -58,7 +60,7 @@ The pop instruction removes the top element of the stack.
 
 Usage: pop
 
-Example:
+Example:                                                                           
 pop
 
 5. swap
