@@ -7,7 +7,7 @@ Installation
 To use the Monty program, you'll need to compile it from source. Here's how:
 
 Clone the Monty repository:
-git clone https://github.com/your-username/monty
+git clone https://github.com/jikrou/monty
 
 Navigate to the Monty directory:
 cd monty
