@@ -68,7 +68,7 @@ The swap instruction swaps the top two elements of the stack.
 
 Usage: swap																			
 
-Example:																														
+Example:                                                    
 swap
 
 6. add
@@ -76,7 +76,7 @@ The add instruction adds the top two elements of the stack.
 
 Usage: add
 
-Example:																													
+Example:                                                        																
 add
 
 7. nop
@@ -84,7 +84,7 @@ The nop instruction does nothing.
 
 Usage: nop
 
-Example:																									
+Example:                                                       									
 nop
 
 8. sub
@@ -92,7 +92,7 @@ The sub instruction subtracts the top element of the stack from the second top e
 
 Usage: sub
 
-Example:																									
+Example:                                                                 												
 sub
 
 9. div
@@ -100,7 +100,7 @@ The div instruction divides the second top element of the stack by the top eleme
 
 Usage: div
 
-Example:																										
+Example:                                                                           										
 div
 
 10. mod
@@ -108,7 +108,7 @@ The mod instruction computes the remainder of the division of the second top ele
 
 Usage: mod
 
-Example:																											
+Example:                                                                                   									
 mod
 
 Comment Handling
